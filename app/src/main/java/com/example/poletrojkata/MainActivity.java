@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView podstawa, wysokosc, pole, obwod;
-    Button obliczPole, obliczObwod;
+    TextView podstawa, wysokosc, pole;
+    ImageButton obliczPole;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         podstawa = findViewById(R.id.podstawa);
         wysokosc = findViewById(R.id.wysokosc);
         pole = findViewById(R.id.pole);
-        obwod = findViewById(R.id.obwod);
+
         obliczPole = findViewById(R.id.obliczPole);
 
 
@@ -35,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
                     Double wysokoscDbl = Double.parseDouble(wysokoscStr);
 
                     Double poleWynik = (podstawaDbl * wysokoscDbl) / 2;
-                    pole.setText(String.format("%.2f", poleWynik));
+                    String wynikStr = (String.format(("Pole trójkąta o podstawie %.2f i wysokości %.2f wynosi %.2f"), podstawaDbl, wysokoscDbl, poleWynik));
+
+
+
+                    pole.setText(wynikStr);
 
 
                 }

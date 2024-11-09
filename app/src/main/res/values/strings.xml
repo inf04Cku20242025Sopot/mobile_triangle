@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pole trojkata</string>
+    <string name="pole">Pole:</string>
+    <string name="oblicz_obw_d">OBLICZ OBWÓD</string>
+    <string name="oblicz_pole">OBLICZ POLE</string>
 </resources>

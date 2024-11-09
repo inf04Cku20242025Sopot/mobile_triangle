@@ -50,62 +50,21 @@
         android:inputType="numberDecimal" />
 
 
-    <LinearLayout
+    <ImageButton
+        android:id="@+id/obliczPole"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_gravity="center"
+        android:background="@drawable/pole"
+        android:text="@string/oblicz_pole" />
+
+
+    <TextView
+        android:id="@+id/pole"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_weight="1"
+        android:text="" />
 
-
-        <ImageButton
-            android:id="@+id/obliczPole"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-
-            android:background="@drawable/pole"
-            android:text="OBLICZ POLE" />
-
-        <ImageButton
-            android:id="@+id/obliczObwod"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-
-            android:text="OBLICZ OBWÓD" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_weight="1"
-            android:text="Pole:" />
-
-        <TextView
-            android:id="@+id/pole"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_weight="1"
-            android:text="Obwód: " />
-
-        <TextView
-            android:id="@+id/obwod"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-    </LinearLayout>
-
-
-    </LinearLayout>
+</LinearLayout>
